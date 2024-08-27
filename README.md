@@ -50,8 +50,9 @@ Testing on ImageNet-A we scored :
 | Augmentation Technique | Avg Accuracy (%) |
 | ---------------------- | ---------------- |
 | PreAugment             | 27.51            |
-| **AutoAugment**        | **30.36**        |
 | AugMix                 | 28.80            |
+| **AutoAugment**        | **30.36**        |
+| **DiffusionAugment**   | $\times$         |
 
 </div>
 
