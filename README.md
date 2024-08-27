@@ -29,3 +29,12 @@ Prompts can be either handcrafted ("a photo of a {label}" or whatever) or learne
 <br>
 
 ## Our Contribution
+
+For the most part we focussed on finding better alternatives to the image augmentation methods proposed in TPT :
+
+#### Image Augmentations
+1) **PreAugment** : applies only random crop to the image
+2) **AugMix**     : the method used in the original TPT implementation, technique which mixes randomly generated augmentations and
+uses a Jensen-Shannon loss to enforce consistency
+3) **AutoAugment** : a reinforcement learning based method which augment an image according to the one maximizing accuracy (trained on ImageNet)
+4) **DiffusionAugment** : based on using a diffusion model to generate augmentations from the input image
