@@ -37,7 +37,7 @@ For the most part we focussed on finding better alternatives to the image augmen
 2) [**AugMix**](https://arxiv.org/abs/1912.02781) 
 3) [**AutoAugment**](https://arxiv.org/abs/1805.09501)
 4) **DiffusionAugment**
-**N.B.** $\rightarrow$ implementation matters! (notebook)[notebook.ipynb]
+**N.B.** $\rightarrow$ implementation matters! [notebook](notebook.ipynb)
 
 <br>
 
@@ -50,7 +50,7 @@ Testing on ImageNet-A we scored :
 | PreAugment             | 27.51                        |
 | AugMix                 | 28.80                        |
 | **AutoAugment**        | **30.36**                    |
-| DiffusionAugment       | _(notebook)[notebook.ipynb]_ |
+| DiffusionAugment       | _[notebook](notebook.ipynb)_ |
 </div>
 
 ### Prompt Augmentation
@@ -83,7 +83,7 @@ This method aims to create more context-aware prompts compared to the standard, 
 | Baseline              | -             | 47.87            |
 </div>
 
-Results are a bit underwhelming, but there's much room for improvement! read the (notebook)[notebook.ipynb] for a better insight on our methodology.
+Results are a bit underwhelming, but there's much room for improvement! read the [notebook](notebook.ipynb) for a better insight on our methodology.
 
 ---
 
