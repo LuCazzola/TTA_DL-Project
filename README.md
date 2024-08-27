@@ -33,13 +33,11 @@ Prompts can be either handcrafted ("a photo of a {label}" or whatever) or learne
 For the most part we focussed on finding better alternatives to the image augmentation methods proposed in TPT :
 
 ### Image Augmentations
-1) **PreAugment** : applies only random crop to the image
-2) [**AugMix**](https://arxiv.org/abs/1912.02781)     : the method used in the original TPT implementation, technique which mixes randomly generated augmentations and
-uses a Jensen-Shannon loss to enforce consistency
-3) [**AutoAugment**](https://arxiv.org/abs/1805.09501) : a reinforcement learning based method which augment an image according to the one maximizing accuracy (trained on ImageNet)
-4) **DiffusionAugment** : based on using a [diffusion model](https://huggingface.co/lambdalabs/sd-image-variations-diffusers) to generate augmentations from the input image
-
-**N.B.** $\rightarrow$ implementation matters! checkout the provided notebook
+1) **PreAugment**
+2) [**AugMix**](https://arxiv.org/abs/1912.02781) 
+3) [**AutoAugment**](https://arxiv.org/abs/1805.09501)
+4) **DiffusionAugment**
+**N.B.** $\rightarrow$ implementation matters! (notebook)[notebook.ipynb]
 
 <br>
 
@@ -47,12 +45,12 @@ Testing on ImageNet-A we scored :
 
 <div align=center>
 
-| Augmentation Technique | Avg Accuracy (%)     |
-| ---------------------- | -------------------- |
-| PreAugment             | 27.51                |
-| AugMix                 | 28.80                |
-| **AutoAugment**        | **30.36**            |
-| DiffusionAugment       | _check notebook !!!_ |
+| Augmentation Technique | Avg Accuracy (%)             |
+| ---------------------- | ---------------------------- |
+| PreAugment             | 27.51                        |
+| AugMix                 | 28.80                        |
+| **AutoAugment**        | **30.36**                    |
+| DiffusionAugment       | _(notebook)[notebook.ipynb]_ |
 </div>
 
 ### Prompt Augmentation
@@ -65,7 +63,7 @@ This method aims to create more context-aware prompts compared to the standard, 
 <div align=center><img src="imgs/image_captioning_schema.png" width="800"></div>
 <br>
 
-**Average Loss and Accuracy for Zero-Shot CLIP (CLIP-RN50):**
+**Accuracy on CLIP (CLIP-RN50):**
 
 <div align=center>
 
@@ -75,7 +73,7 @@ This method aims to create more context-aware prompts compared to the standard, 
 | Baseline              | -             | 21.83            |
 </div>
 
-**Average Loss and Accuracy for Zero-Shot CLIP (CLIP-ViT-B/16):**
+**Accuracy on CLIP (CLIP-ViT-B/16):**
 
 <div align=center>
 
@@ -85,7 +83,11 @@ This method aims to create more context-aware prompts compared to the standard, 
 | Baseline              | -             | 47.87            |
 </div>
 
+Results are a bit underwhelming, but there's much room for improvement! read the (notebook)[notebook.ipynb] for a better insight on our methodology.
 
+---
+
+contributors : [@LuCazzola](https://github.com/LuCazzola) [@lorenzialessandro](https://github.com/lorenzialessandro)
 
 
 
