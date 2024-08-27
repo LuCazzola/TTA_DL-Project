@@ -6,6 +6,8 @@ Test Time Adaptation (TTA) explores the possibility to improve a model's perform
 
 Our obective is to implement a TTA solution to improve an existent image classifier.
 
+contributors : [@LuCazzola](https://github.com/LuCazzola) [@lorenzialessandro](https://github.com/lorenzialessandro)
+
 <br>
 
 ## Design
@@ -86,8 +88,7 @@ This method aims to create more context-aware prompts compared to the standard, 
 Results are a bit underwhelming, but there's much room for improvement! read the [notebook](notebook.ipynb) for a better insight on our methodology.
 
 ---
-
-contributors : [@LuCazzola](https://github.com/LuCazzola) [@lorenzialessandro](https://github.com/lorenzialessandro)
+---
 
 
 
