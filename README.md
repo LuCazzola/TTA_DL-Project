@@ -7,11 +7,11 @@ Test Time Adaptation (TTA) explores the possibility to improve a model's perform
 Our obective is to implement a TTA solution to improve an existent image classifier.
 
 ## Design
-The backbone model of choice is [Contrastive Language–Image Pre-training (CLIP)](https://openai.com/index/clip/), a well known model by OpenAI trained with the contrastive learning paradigma, capable of making zero-shot classification.
+The backbone model of choice is [**Contrastive Language–Image Pre-training (CLIP)**](https://openai.com/index/clip/), a well known model by OpenAI trained with the contrastive learning paradigma, capable of making zero-shot classification.
 
 <br>
 
-A possible TTA solution for CLIP as [Test-Time Prompt Tuning (TPT)](https://arxiv.org/abs/2209.07511)
+A possible TTA solution for CLIP as [**Test-Time Prompt Tuning (TPT)**](https://arxiv.org/abs/2209.07511)
 
 <br>
 <div align=center><img src="imgs/TPT.png" width="800" /></div>
@@ -22,4 +22,6 @@ What TPT does is basically:
 * Push the augmented images and the original one through the CLIP image encoder togheter with a set of prompts.
 * Compute the entropy of all augmentations + the original and keep the best 10% (minimizing the entropy).
 * Average the top 10% distributions obtaining a marginal distribution, so compute again the (marginal) entropy.
-Prompts can be either handcrafted ("a photo of a {label}" or whatever) or learned via promp learner such as CoOp. Adding a prompt learner also adds the possibility to actually use the computed marginal entropy as our model's loss function.
+Prompts can be either handcrafted ("a photo of a {label}" or whatever) or learned via promp learner such as [**CoOp**](https://arxiv.org/abs/2109.01134). Adding a prompt learner also adds the possibility to actually use the computed marginal entropy as our model's loss function.
+
+## Our Contribution
