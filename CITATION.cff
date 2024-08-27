@@ -1,0 +1,8 @@
+@software{TTA_LucaC_AleL,
+  author = {Luca Cazzola, Alessandro Lorenzi},
+  month = {8},
+  title = {{TTA_DL-Project}},
+  url = {https://github.com/LuCazzola/TTA_DL-Project},
+  version = {1.0},
+  year = {2024}
+}
