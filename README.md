@@ -88,9 +88,6 @@ This method aims to create more context-aware prompts compared to the standard, 
 
 Results are a bit underwhelming, but there's much room for improvement! read the [notebook](notebook.ipynb) for a better insight on our methodology.
 
----
----
-
 
 
 
