@@ -18,7 +18,7 @@ The backbone model of choice is [**Contrastive Language–Image Pre-training (CL
 A possible TTA solution for CLIP as [**Test-Time Prompt Tuning (TPT)**](https://arxiv.org/abs/2209.07511)
 
 <br>
-<div align=center><img src="imgs/TPT.png" width="800" /></div>
+<div align=center><img src="imgs/TPT.png" width="700" /></div>
 <br>
 
 ## Our Contribution
@@ -54,7 +54,7 @@ We introduce a our approach for augmenting prompts using an **image captioning s
 This method aims to create more context-aware prompts compared to the standard, generic descriptions like "a photo of a {label}" Our hypothesis is that captions specifically tailored to the content of the image will enhance the alignment between the image and the class labels, leading to improved model performance.
 
 <br>
-<div align=center><img src="imgs/image_captioning_schema.png" width="800"></div>
+<div align=center><img src="imgs/image_captioning_schema.png" width="700"></div>
 <br>
 
 **Accuracy on CLIP (CLIP-RN50):**
