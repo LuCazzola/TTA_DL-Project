@@ -21,15 +21,6 @@ A possible TTA solution for CLIP as [**Test-Time Prompt Tuning (TPT)**](https://
 <div align=center><img src="imgs/TPT.png" width="800" /></div>
 <br>
 
-What TPT does is basically:
-* Consider one image at time and augment it N times.
-* Push the augmented images and the original one togheter with a set of prompts through the CLIP image and text encoders.
-* Compute the entropy of all augmentations + the original and keep the best 10% (minimizing the entropy).
-* Average the top 10% distributions obtaining a marginal distribution, so compute again the (marginal) entropy.
-Prompts can be either handcrafted ("a photo of a {label}" or whatever) or learned via promp learner such as [**CoOp**](https://arxiv.org/abs/2109.01134). Adding a prompt learner also adds the possibility to actually use the computed marginal entropy as our model's loss function.
-
-<br>
-
 ## Our Contribution
 
 For the most part we focussed on finding better alternatives to the image augmentation methods proposed in TPT :
