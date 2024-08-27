@@ -39,6 +39,7 @@ For the most part we focussed on finding better alternatives to the image augmen
 2) [**AugMix**](https://arxiv.org/abs/1912.02781) 
 3) [**AutoAugment**](https://arxiv.org/abs/1805.09501)
 4) **DiffusionAugment**
+
 **N.B.** $\rightarrow$ implementation matters! [notebook](notebook.ipynb)
 
 <br>
