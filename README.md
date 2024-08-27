@@ -13,7 +13,9 @@ The backbone model of choice is [Contrastive Language–Image Pre-training (CLIP
 
 A possible TTA solution for CLIP as [Test-Time Prompt Tuning (TPT)](https://arxiv.org/abs/2209.07511)
 
+<br>
 <div align=center><img src="imgs/TPT.png" width="800" /></div>
+<br>
 
 What TPT does is basically:
 * Consider one image at time and augment it N times.
