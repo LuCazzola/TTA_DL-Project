@@ -38,7 +38,7 @@ For the most part we focussed on finding better alternatives to the image augmen
 uses a Jensen-Shannon loss to enforce consistency
 3) [**AutoAugment**](https://arxiv.org/abs/1805.09501) : a reinforcement learning based method which augment an image according to the one maximizing accuracy (trained on ImageNet)
 4) **DiffusionAugment** : based on using a [diffusion model](https://huggingface.co/lambdalabs/sd-image-variations-diffusers) to generate augmentations from the input image
-* **N.B.** $\rightarrow$ implementation matters! checkout the provided notebook
+**N.B.** $\rightarrow$ implementation matters! checkout the provided notebook
 
 Testing on ImageNet-A we scored :
 
