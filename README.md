@@ -6,6 +6,8 @@ Test Time Adaptation (TTA) explores the possibility to improve a model's perform
 
 Our obective is to implement a TTA solution to improve an existent image classifier.
 
+<br>
+
 ## Design
 The backbone model of choice is [**Contrastive Language–Image Pre-training (CLIP)**](https://openai.com/index/clip/), a well known model by OpenAI trained with the contrastive learning paradigma, capable of making zero-shot classification.
 
@@ -23,5 +25,7 @@ What TPT does is basically:
 * Compute the entropy of all augmentations + the original and keep the best 10% (minimizing the entropy).
 * Average the top 10% distributions obtaining a marginal distribution, so compute again the (marginal) entropy.
 Prompts can be either handcrafted ("a photo of a {label}" or whatever) or learned via promp learner such as [**CoOp**](https://arxiv.org/abs/2109.01134). Adding a prompt learner also adds the possibility to actually use the computed marginal entropy as our model's loss function.
+
+<br>
 
 ## Our Contribution
