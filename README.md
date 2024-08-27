@@ -34,7 +34,22 @@ For the most part we focussed on finding better alternatives to the image augmen
 
 #### Image Augmentations
 1) **PreAugment** : applies only random crop to the image
-2) **AugMix**     : the method used in the original TPT implementation, technique which mixes randomly generated augmentations and
+2) [**AugMix**](https://arxiv.org/abs/1912.02781)     : the method used in the original TPT implementation, technique which mixes randomly generated augmentations and
 uses a Jensen-Shannon loss to enforce consistency
-3) **AutoAugment** : a reinforcement learning based method which augment an image according to the one maximizing accuracy (trained on ImageNet)
-4) **DiffusionAugment** : based on using a diffusion model to generate augmentations from the input image
+3) [**AutoAugment**](https://arxiv.org/abs/1805.09501) : a reinforcement learning based method which augment an image according to the one maximizing accuracy (trained on ImageNet)
+4) **DiffusionAugment** : based on using a [diffusion model](https://huggingface.co/lambdalabs/sd-image-variations-diffusers) to generate augmentations from the input image
+* **N.B.** $\rightarrow$ implementation matters! checkout the provided notebook
+
+Testing on ImageNet-A we scored :
+
+<div align=center>
+| Augmentation Technique | Avg Accuracy (%) |
+| ---------------------- | ---------------- |
+| PreAugment             | 27.51            |
+| **AutoAugment**        | **30.36**        |
+| AugMix                 | 28.80            |
+</div>
+
+
+
+
