@@ -53,7 +53,6 @@ Testing on ImageNet-A we scored :
 | AugMix                 | 28.80            |
 | **AutoAugment**        | **30.36**        |
 | DiffusionAugment       | $\times$         |
-| ---------------------- | ---------------- |
 
 </div>
 
