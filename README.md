@@ -32,7 +32,7 @@ Prompts can be either handcrafted ("a photo of a {label}" or whatever) or learne
 
 For the most part we focussed on finding better alternatives to the image augmentation methods proposed in TPT :
 
-#### Image Augmentations
+### Image Augmentations
 1) **PreAugment** : applies only random crop to the image
 2) [**AugMix**](https://arxiv.org/abs/1912.02781)     : the method used in the original TPT implementation, technique which mixes randomly generated augmentations and
 uses a Jensen-Shannon loss to enforce consistency
@@ -54,6 +54,17 @@ Testing on ImageNet-A we scored :
 | **AutoAugment**        | **30.36**            |
 | DiffusionAugment       | _check notebook !!!_ |
 </div>
+
+### Prompt Augmentation
+
+We introduce a our approach for augmenting prompts using an **image captioning system**. 
+
+This method aims to create more context-aware prompts compared to the standard, generic descriptions like "a photo of a {label}" Our hypothesis is that captions specifically tailored to the content of the image will enhance the alignment between the image and the class labels, leading to improved model performance.
+
+<center><img src="imgs/image_captioning_schema.png" width="800"></center>
+
+
+
 
 
 
