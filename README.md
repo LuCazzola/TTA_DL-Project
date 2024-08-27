@@ -47,12 +47,12 @@ Testing on ImageNet-A we scored :
 
 <div align=center>
 
-| Augmentation Technique | Avg Accuracy (%) |
-| ---------------------- | ---------------- |
-| PreAugment             | 27.51            |
-| AugMix                 | 28.80            |
-| **AutoAugment**        | **30.36**        |
-| DiffusionAugment       | $\times$         |
+| Augmentation Technique | Avg Accuracy (%)  |
+| ---------------------- | ----------------- |
+| PreAugment             | 27.51             |
+| AugMix                 | 28.80             |
+| **AutoAugment**        | **30.36**         |
+| DiffusionAugment       | check notebook!!! |
 </div>
 
 
